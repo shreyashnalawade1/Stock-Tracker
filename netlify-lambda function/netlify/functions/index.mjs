@@ -2,7 +2,7 @@ import finnhub from "finnhub";
 import sql from "mssql";
 
 const api_key = finnhub.ApiClient.instance.authentications["api_key"];
-api_key.apiKey = "cm5em7pr01qjc6l4b2tgcm5em7pr01qjc6l4b2u0";
+api_key.apiKey = "fin_hub_api_key";
 
 const today = new Date();
 today.setDate(today.getDate() - 1);
@@ -15,8 +15,8 @@ const date = `${today.getFullYear()}-${
 const server = "competitor-price-analysis.database.windows.net";
 const database = "competitor-analysis";
 const port = 1433;
-const user = "root-";
-const password = "foxiscoming123@";
+const user = "azure-sql-user";
+const password = "azure-sql-password";
 
 const sqlConfig = {
   server,
